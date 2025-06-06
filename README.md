@@ -45,7 +45,7 @@ INFO:     Started server process [7536]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 ```
-5. Execute o arquivo 'index.html'
+5. Abra o arquivo 'index.html'
 
 ## Estrutura de Arquivos
 ```bash
