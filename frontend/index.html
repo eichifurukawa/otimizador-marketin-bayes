@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otimizador de Campanhas de Marketing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Otimizador de Campanhas com Teorema de Bayes</h1>
+
+        <div class="upload-section">
+            <h2>Carregar Dados</h2>
+            <div class="mb-20">
+                <input type="file" id="csvFile" accept=".csv" class="mb-20">
+                <button onclick="processFile()">Processar Dados</button>
+            </div>
+            <p>Ou use nossos <a href="#" onclick="loadSampleData()">dados de exemplo</a></p>
+            <p class="text-center" style="margin-top: 10px;">
+                <small>Formatos suportados: CSV</small>
+            </p>
+        </div>
+
+        <div class="data-instructions">
+            <h2>Como preparar seus dados</h2>
+            <p>Seu arquivo CSV deve conter as seguintes colunas:</p>
+            <ul>
+                <li><strong>channel</strong>: Nome do canal de marketing (ex: google_ads, instagram)</li>
+                <li><strong>impressions</strong>: Número de impressões/exibições</li>
+                <li><strong>clicks</strong>: Número de cliques</li>
+                <li><strong>conversions</strong>: Número de conversões (compras, leads, etc.)</li>
+                <li><strong>cost</strong>: Custo total da campanha (em dólares)</li>
+            </ul>
+            <p>Exemplo:</p>
+            <pre>
+channel,impressions,clicks,conversions,cost
+google_ads,10000,500,50,2000
+instagram,8000,400,60,1200
+email,15000,750,30,900</pre>
+        </div>
+
+        <div class="uploaded-data" id="uploadedDataSection" style="display: none;">
+            <h2>Dados Inseridos</h2>
+            <div class="data-table-container">
+                <table id="uploadedDataTable" class="data-table">
+                    <thead>
+                        <tr>
+                            <th class="tooltip">Canal<span class="tooltiptext">Nome do canal de marketing (ex: Google Ads, Instagram)</span></th>
+                            <th class="tooltip">Impressões<span class="tooltiptext">Número de vezes que o anúncio foi exibido</span></th>
+                            <th class="tooltip">Cliques<span class="tooltiptext">Número de cliques no anúncio</span></th>
+                            <th class="tooltip">Conversões<span class="tooltiptext">Número de conversões (compras, leads, etc.)</span></th>
+                            <th class="tooltip">Custo ($)<span class="tooltiptext">Valor total investido no canal</span></th>
+                            <th class="tooltip">CTR<span class="tooltiptext">Click-Through Rate: (Cliques/Impressões) × 100</span></th>
+                            <th class="tooltip">CPA<span class="tooltiptext">Custo por Aquisição: Custo Total / Conversões</span></th>
+                        </tr>
+                    </thead>
+                    <tbody id="uploadedDataBody"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="results-section" id="resultsSection" style="display: none;">
+            <h2>Resultados</h2>
+            <div class="recommendation" id="recommendation"></div>
+
+            <table id="resultsTable" class="data-table">
+                <thead>
+                    <tr>
+                        <th class="tooltip">Canal<span class="tooltiptext">Nome do canal de marketing</span></th>
+                        <th class="tooltip">Prob. Conversão<span class="tooltiptext">Probabilidade de conversão calculada com Teorema de Bayes</span></th>
+                        <th class="tooltip">ROI ($ por $1)<span class="tooltiptext">Retorno sobre Investimento por dólar gasto</span></th>
+                        <th class="tooltip">Score<span class="tooltiptext">Pontuação combinada (Probabilidade × ROI) para recomendação</span></th>
+                        <th class="tooltip">CTR<span class="tooltiptext">Click-Through Rate (%)</span></th>
+                        <th class="tooltip">CPA ($)<span class="tooltiptext">Custo por Aquisição</span></th>
+                    </tr>
+                </thead>
+                <tbody id="resultsBody"></tbody>
+            </table>
+
+            <div class="bayes-explanation">
+                <h3>Como funciona o cálculo?</h3>
+                <p>Usamos o Teorema de Bayes para calcular a probabilidade de conversão em cada canal:</p>
+                <p><strong>P(Conversão | Canal) = [P(Canal | Conversão) × P(Conversão)] / P(Canal)</strong></p>
+                <p>Onde:</p>
+                <ul>
+                    <li><strong>P(Conversão | Canal)</strong>: Probabilidade de conversão no canal (resultado)</li>
+                    <li><strong>P(Canal | Conversão)</strong>: % de conversões que vieram deste canal</li>
+                    <li><strong>P(Conversão)</strong>: Taxa de conversão geral</li>
+                    <li><strong>P(Canal)</strong>: % de cliques que vieram deste canal</li>
+                </ul>
+                <p>O score de recomendação combina a probabilidade de conversão com o ROI (Retorno sobre Investimento).</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
