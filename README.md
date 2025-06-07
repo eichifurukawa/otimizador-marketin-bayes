@@ -24,7 +24,7 @@ Este projeto é uma aplicação web que utiliza o Teorema de Bayes para analisar
 git clone https://github.com/eichifurukawa/otimizador-marketin-bayes.git
 cd otimizador-marketin-bayes
 ```
-2. Certifique-se de ter o [Python] instalado (https://www.python.org/downloads/)
+2. Certifique-se de ter o [🐍Python](https://www.python.org/downloads/) instalado 
 3. Instale as dependências:
 ```bash
 pip install -r requirements.txt
