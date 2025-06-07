@@ -5,11 +5,11 @@
 Este projeto é uma aplicação web que utiliza o Teorema de Bayes para analisar e otimizar campanhas de marketing digital. A ferramenta processa dados de desempenho de diferentes canais de marketing (como Google Ads, Instagram, Email, etc.) e fornece recomendações baseadas em probabilidades de conversão e ROI (Retorno sobre Investimento).
 </p>
 
-- [✨ Funcionalidades Principais ✨](#✨-funcionalidades-principais-✨)
-- [🛠️ Tecnologias Utilizadas 🛠️](#🛠️-tecnologias-utilizadas-🛠️)
-- [🚀 Como Executar o Projeto 🚀](#🚀-como-executar-o-projeto-🚀)
-- [📂 Estrutura de Arquivos 📂](#📂-estrutura-de-arquivos-📂)
-- [🎲 Formato dos Dados 🎲](#🎲-formato-dos-dados-🎲)
+- [✨ Funcionalidades Principais](#-funcionalidades-principais-).
+- [🛠️ Tecnologias Utilizadas](#-tecnologias-utilizadas-).
+- [🚀 Como Executar o Projeto](#-como-executar-o-projeto-).
+- [📂 Estrutura de Arquivos](#-estrutura-de-arquivos-).
+- [🎲 Formato dos Dados](#-formato-dos-dados-).
 
 ## ✨ Funcionalidades Principais ✨
 - Análise Bayesiana: Calcula a probabilidade de conversão para cada canal usando o Teorema de Bayes
