@@ -5,6 +5,12 @@
 Este projeto é uma aplicação web que utiliza o Teorema de Bayes para analisar e otimizar campanhas de marketing digital. A ferramenta processa dados de desempenho de diferentes canais de marketing (como Google Ads, Instagram, Email, etc.) e fornece recomendações baseadas em probabilidades de conversão e ROI (Retorno sobre Investimento).
 </p>
 
+- [✨ Funcionalidades Principais ✨](#✨-funcionalidades-principais-✨)
+- [🛠️ Tecnologias Utilizadas 🛠️](#🛠️-tecnologias-utilizadas-🛠️)
+- [🚀 Como Executar o Projeto 🚀](#🚀-como-executar-o-projeto-🚀)
+- [📂 Estrutura de Arquivos 📂](#📂-estrutura-de-arquivos-📂)
+- [🎲 Formato dos Dados 🎲](#🎲-formato-dos-dados-🎲)
+
 ## ✨ Funcionalidades Principais ✨
 - Análise Bayesiana: Calcula a probabilidade de conversão para cada canal usando o Teorema de Bayes
 - Recomendações Inteligentes: Sugere o melhor canal para alocação de recursos com base em scores combinados
@@ -17,7 +23,7 @@ Este projeto é uma aplicação web que utiliza o Teorema de Bayes para analisar
 - Bibliotecas: Pandas, NumPy
 - Estilo: CSS moderno e responsivo
 
-## 🚀 Como Executar o Projeto
+## 🚀 Como Executar o Projeto 🚀
 
 1. Clone o repositório:
 ```bash
@@ -47,28 +53,28 @@ INFO:     Application startup complete.
 ```
 5. Abra o arquivo 'index.html'
 
-## 📂 Estrutura de Arquivos
+## 📂 Estrutura de Arquivos 📂
 ```bash
-otimizador-marketin-bayes/
-│   README.md
+📂otimizador-marketin-bayes/
+│   📄README.md
 │
-├───backend
-│   │   app.py                      # Lógica principal da API
-│   │   requirements.txt            # Dependências Python
+├───📂backend
+│   │   📄app.py                      # Lógica principal da API
+│   │   📄requirements.txt            # Dependências Python
 │   │
-│   ├───data
-│   │       sample_data.csv         # Dados de exemplo
+│   ├───📂data
+│   │       📄sample_data.csv         # Dados de exemplo
 │   │
-│   └───__pycache__
-│           app.cpython-311.pyc
+│   └───📂__pycache__
+│           📄app.cpython-311.pyc
 │
-└───frontend
-        index.html                  # Página principal
-        script.js                   # Interações do usuário
-        style.css                   # Estilos CSS
+└───📂frontend
+        📄index.html                  # Página principal
+        📄script.js                   # Interações do usuário
+        📄style.css                   # Estilos CSS
 ```
 
-##  🎲 Formato dos Dados
+##  🎲 Formato dos Dados 🎲
 
 | Coluna       | Tipo     | Descrição                         |
 |--------------|----------|-----------------------------------|
@@ -77,8 +83,3 @@ otimizador-marketin-bayes/
 | clicks       | inteiro  | Número de cliques                 |
 | conversions  | inteiro  | Número de conversões              |
 | cost         | float    | Custo total (em dólares)          |
-
-
-
-
-
