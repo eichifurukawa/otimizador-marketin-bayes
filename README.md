@@ -53,10 +53,15 @@ INFO:     Application startup complete.
 ```
 5. Abra o arquivo 'index.html'
 
+6. Carregue um arquivo CSV ou clique na opção *dados de exemplo* para testar o funcionamento da aplicação.
+
+> ***Foi deixado um arquivo "teste.csv" para o carregamento de dados mais extensos para uma melhor visualização da saída dos resultados***
+
 ## 📂 Estrutura de Arquivos 📂
 ```bash
 📂otimizador-marketin-bayes/
 │   📄README.md
+│   📄teste.csv
 │
 ├───📂backend
 │   │   📄app.py                      # Lógica principal da API
