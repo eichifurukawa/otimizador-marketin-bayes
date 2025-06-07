@@ -1,30 +1,30 @@
-<h1 align="center">Otimizador de Campanhas de Marketing com Teorema de Bayes</h1>
+<h1 align="center">📈 Otimizador de Campanhas de Marketing com Teorema de Bayes 📈</h1>
 
-## Descrição do projeto
+## 📝 Descrição do projeto 📝
 <p align="left">
 Este projeto é uma aplicação web que utiliza o Teorema de Bayes para analisar e otimizar campanhas de marketing digital. A ferramenta processa dados de desempenho de diferentes canais de marketing (como Google Ads, Instagram, Email, etc.) e fornece recomendações baseadas em probabilidades de conversão e ROI (Retorno sobre Investimento).
 </p>
 
-## Funcionalidades Principais
+## ✨ Funcionalidades Principais ✨
 - Análise Bayesiana: Calcula a probabilidade de conversão para cada canal usando o Teorema de Bayes
 - Recomendações Inteligentes: Sugere o melhor canal para alocação de recursos com base em scores combinados
 - Visualização de Dados: Exibe os dados brutos e resultados de forma clara e organizada
 - Dados de Exemplo: Permite testar a aplicação sem precisar carregar dados
 
-## Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas 🛠️
 - Backend: FastAPI (Python)
 - Frontend: HTML, CSS, JavaScript
 - Bibliotecas: Pandas, NumPy
 - Estilo: CSS moderno e responsivo
 
-## Como Executar o Projeto
+## 🚀 Como Executar o Projeto
 
 1. Clone o repositório:
 ```bash
 git clone https://github.com/eichifurukawa/otimizador-marketin-bayes.git
 cd otimizador-marketin-bayes
 ```
-2. Certifique-se de ter Python 3.7+ instalado
+2. Certifique-se de ter o [Python] instalado (https://www.python.org/downloads/)
 3. Instale as dependências:
 ```bash
 pip install -r requirements.txt
@@ -47,23 +47,28 @@ INFO:     Application startup complete.
 ```
 5. Abra o arquivo 'index.html'
 
-## Estrutura de Arquivos
+## 📂 Estrutura de Arquivos
 ```bash
 otimizador-marketin-bayes/
-├── backend/
-│   ├── app.py               # Lógica principal da API
-│   └── sample_data.csv      # Dados de exemplo
-├── frontend/
-│   ├── index.html           # Página principal
-│   ├── style.css            # Estilos CSS
-│   └── script.js            # Interações do usuário
-├── .gitignore
-├── LICENSE
-├── README.md
-└── requirements.txt         # Dependências Python
+│   README.md
+│
+├───backend
+│   │   app.py                      # Lógica principal da API
+│   │   requirements.txt            # Dependências Python
+│   │
+│   ├───data
+│   │       sample_data.csv         # Dados de exemplo
+│   │
+│   └───__pycache__
+│           app.cpython-311.pyc
+│
+└───frontend
+        index.html                  # Página principal
+        script.js                   # Interações do usuário
+        style.css                   # Estilos CSS
 ```
 
-##  Formato dos Dados
+##  🎲 Formato dos Dados
 
 | Coluna       | Tipo     | Descrição                         |
 |--------------|----------|-----------------------------------|
