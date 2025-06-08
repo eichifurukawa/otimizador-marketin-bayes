@@ -23,7 +23,6 @@ h1 {
     font-size: 2rem;
 }
 
-/* Seção de Upload - Mais elegante */
 .upload-section {
     text-align: center;
     padding: 25px;
@@ -39,7 +38,6 @@ h1 {
     background-color: #f0f7fd;
 }
 
-/* Botões e Inputs - Mais refinados */
 button, input[type="file"] {
     padding: 12px 20px;
     margin: 10px auto;
@@ -72,7 +70,6 @@ input[type="file"] {
     padding: 10px;
 }
 
-/* Seção de Resultados - Mais organizada */
 .results-section {
     margin-top: 30px;
     background: white;
@@ -91,7 +88,6 @@ input[type="file"] {
     color: #2c3e50;
 }
 
-/* Tabelas - Mais elegantes */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -117,7 +113,6 @@ tr:hover {
     background-color: #f5f9ff;
 }
 
-/* Explicação Bayesiana - Mais destacada */
 .bayes-explanation {
     background-color: #f8f9fa;
     padding: 22px;
@@ -136,7 +131,6 @@ tr:hover {
     color: #555;
 }
 
-/* Destaques de pontuação */
 .high-score {
     background-color: rgba(46, 204, 113, 0.1);
 }
@@ -145,7 +139,6 @@ tr:hover {
     background-color: rgba(241, 196, 15, 0.1);
 }
 
-/* Seção de instruções - Mais clean */
 .data-instructions {
     background-color: #f8f9fa;
     padding: 22px;
@@ -164,7 +157,6 @@ tr:hover {
     line-height: 1.5;
 }
 
-/* Dados carregados - Visual melhorado */
 .uploaded-data {
     margin: 30px 0;
     padding: 22px;
@@ -174,9 +166,9 @@ tr:hover {
 }
 
 .data-table-container {
-    overflow: visible; /* Mudar de 'auto' para 'visible' */
-    position: relative; /* Adicionado para contexto de posicionamento */
-    z-index: 1; /* Garante que os tooltips apareçam acima */
+    overflow: visible; 
+    position: relative; 
+    z-index: 1; 
 }
 
 .uploaded-data table {
@@ -189,7 +181,6 @@ tr:hover {
     color: #e74c3c;
 }
 
-/* ============ RESPONSIVIDADE ============ */
 @media (max-width: 768px) {
     .container {
         padding: 20px;
@@ -249,7 +240,6 @@ tr:hover {
     }
 }
 
-/* Melhorias para tabelas em mobile */
 @media (max-width: 600px) {
     .data-table-container {
         border: none;
@@ -284,7 +274,7 @@ tr:hover {
     border-radius: 6px;
     padding: 10px;
     position: absolute;
-    z-index: 1000; /* Valor alto para garantir sobreposição */
+    z-index: 1000; 
     bottom: 125%;
     left: 50%;
     margin-left: -100px;
@@ -293,7 +283,7 @@ tr:hover {
     font-size: 0.9rem;
     font-weight: normal;
     line-height: 1.4;
-    white-space: normal; /* Permite quebra de texto */
+    white-space: normal; 
 }
 
 .tooltip:hover .tooltiptext {
@@ -335,7 +325,6 @@ tr:hover {
     color: #e74c3c;
 }
 
-/* Destaque para a recomendação */
 .recommendation {
     background: linear-gradient(135deg, #e8f4fc 0%, #d4e8fa 100%);
     padding: 18px;
